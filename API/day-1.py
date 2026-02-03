@@ -13,8 +13,9 @@
 # CURD operations
 # C - Creation
 # U - Update
-# R - Retirive (Get)
+# R - Retirive (Get)/Read
 # D - Delete/Remove
+
 
 # Framework
 # FastAPI : FastAPI is a framework that is used to built API's
