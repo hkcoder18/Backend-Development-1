@@ -5,7 +5,7 @@
 # we can update particular task
 # we can delete delete particular task
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 app = FastAPI()
@@ -58,7 +58,7 @@ def update(id: int, updated: ToDoUpdate):
             task.update(data)
             return {"message": "Task successfully updated!!"}
     else:
-        return {"message": "Task not found"}
+        raise HTTPException(status_code=400,detail="Tast not found")
     
 @app.delete("/todo/{id}/")
 def delete(id: int):
@@ -68,3 +68,9 @@ def delete(id: int):
             return {"message": "Task successfully deleted!!"}
     else:
         return {"message": "Task not found or Already deleted!"}
+
+    # 200 - sucess
+    # 201 - sucess
+    # 400 - bad request
+    # 404 - not found
+    # 500 - internal server error
