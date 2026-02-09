@@ -95,5 +95,5 @@
 # SYNTAX : ALTER TABLE table_name DROP COLUMN col_name;
 
 # DROT TABLE
-# COMMAND : DROP
+# COMMAND : DROP 
 # SYNTAX : DROP TABLE table_name;
