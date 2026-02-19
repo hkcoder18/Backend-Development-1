@@ -7,4 +7,4 @@
 # 3. unique = each value in column should be unique
 # 4. not null = the column value must not be null
 # 5. default = it assign default value to the column
-# 6. check = condition 
+# 6. check = condition
